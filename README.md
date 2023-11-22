@@ -15,7 +15,7 @@ O jogo de quiz foi desenvolvido no Unity, aproveitando as funcionalidades podero
 - Cada pergunta é um Scriptable Object, facilitando a criação e gerenciamento de diferentes conjuntos de perguntas.
 
 **Implementação:**
-1. Criamos uma classe `QuestionData` que herda de `ScriptableObject` para representar dados de pergunta.
+1. Criei uma classe `QuestionData` que herda de `ScriptableObject` para representar dados de pergunta.
 2. Cada `QuestionData` possui campos para a pergunta, opções de resposta e a resposta correta.
 
 ### Particle System
@@ -25,7 +25,7 @@ O jogo de quiz foi desenvolvido no Unity, aproveitando as funcionalidades podero
 - Isso adiciona uma camada extra de imersão e feedback visual ao jogo.
 
 **Implementação:**
-1. Criamos um sistema de partículas no Unity para representar os efeitos visuais desejados.
+1. Criei um sistema de partículas no Unity para representar os efeitos visuais desejados.
 2. O Particle System é acionado em eventos específicos, como quando uma resposta correta é selecionada.
 
 ### Efeitos Sonoros
@@ -46,7 +46,7 @@ O jogo de quiz foi desenvolvido no Unity, aproveitando as funcionalidades podero
 - Utilizamos o padrão Singleton para garantir que exista apenas uma instância dos `Managers` em execução, garantindo o gerenciamento centralizado do estado do jogo.
 
 **Implementação:**
-1. Criamos classes de `Managers` que seguem o padrão Singleton.
+1. Criei classes de `Managers` que seguem o padrão Singleton.
 2. O UIManager gerencia o estado geral dos painéis, como pontuação do jogador e controle de fluxo.
 
 ### Observer Design Pattern
