@@ -2,6 +2,8 @@
 
 Este arquivo README fornece informações detalhadas sobre o desenvolvimento do jogo de quiz. O jogo incorpora o uso de Scriptable Objects, Particle System, efeitos sonoros e padrões de design Singleton e Observer.
 
+![Figma](https://res.cloudinary.com/renanrider/image/upload/v1700680371/figma_h3g9i9.png)
+
 ## Desenvolvimento Geral
 
 O jogo de quiz foi desenvolvido no Unity, aproveitando as funcionalidades poderosas da engine para criar uma experiência interativa e envolvente.
