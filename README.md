@@ -11,7 +11,7 @@ O jogo de quiz foi desenvolvido no Unity, aproveitando as funcionalidades podero
 ### Scriptable Objects
 
 **Decisões:**
-- Utilizamos Scriptable Objects para armazenar dados estáticos, como perguntas, respostas e informações do jogador. Isso permite fácil extensibilidade e reutilização de dados sem a necessidade de modificar diretamente os scripts.
+- Uso de Scriptable Objects para armazenar dados estáticos, como perguntas, respostas e resposta correta. Isso permite fácil extensibilidade e reutilização de dados sem a necessidade de modificar diretamente os scripts.
 - Cada pergunta é um Scriptable Object, facilitando a criação e gerenciamento de diferentes conjuntos de perguntas.
 
 **Implementação:**
@@ -21,29 +21,28 @@ O jogo de quiz foi desenvolvido no Unity, aproveitando as funcionalidades podero
 ### Particle System
 
 **Decisões:**
-- Utilizamos o Particle System para adicionar efeitos visuais dinâmicos ao jogo, como explosões de confete quando o jogador responde corretamente.
+- Uso de Particle System para adicionar efeitos visuais dinâmicos ao jogo, como explosões de confete quando o jogador responde corretamente.
 - Isso adiciona uma camada extra de imersão e feedback visual ao jogo.
 
 **Implementação:**
-1. Criei um sistema de partículas no Unity para representar os efeitos visuais desejados.
-2. O Particle System é acionado em eventos específicos, como quando uma resposta correta é selecionada.
+1. Criei uma classe responsável por disparar  partículas de confete para adicionar mais engajamento ao quiz.
 
 ### Efeitos Sonoros
 
 **Decisões:**
-- Incorporamos efeitos sonoros para aumentar a experiência audiovisual do jogo.
+- Uso de efeitos sonoros para aumentar a experiência audiovisual do jogo.
 - Efeitos sonoros são usados para feedback imediato ao selecionar respostas corretas ou incorretas, incentivando a interatividade.
 
 **Implementação:**
-1. Importamos e configuramos arquivos de áudio no Unity para os efeitos sonoros desejados.
-2. Utilizamos o API de áudio do Unity para reproduzir os efeitos sonoros em momentos estratégicos do jogo.
+1. Criei uma classe SoundManager responsável por executar os áudios de click, sucesso e falha.
+2. Uso da API de áudio do Unity para reproduzir os efeitos sonoros em momentos estratégicos do jogo.
 
 ## Padrões de Design
 
 ### Singleton Pattern
 
 **Decisões:**
-- Utilizamos o padrão Singleton para garantir que exista apenas uma instância dos `Managers` em execução, garantindo o gerenciamento centralizado do estado do jogo.
+- Uso do padrão Singleton para garantir que exista apenas uma instância dos `Managers` em execução, garantindo o gerenciamento centralizado do estado do jogo.
 
 **Implementação:**
 1. Criei classes de `Managers` que seguem o padrão Singleton.
@@ -52,7 +51,7 @@ O jogo de quiz foi desenvolvido no Unity, aproveitando as funcionalidades podero
 ### Observer Design Pattern
 
 **Decisões:**
-- Implementamos o Observer Design Pattern no `EventManager` para facilitar a comunicação entre diferentes partes do jogo sem criar acoplamentos diretos.
+- Uso do padrão Observer Design Pattern no `EventManager` para facilitar a comunicação entre diferentes partes do jogo sem criar acoplamentos diretos.
 
 **Implementação:**
 1. Foi criado uma classe `EventManager` que permite que diferentes partes do código se inscrevam e recebam notificações de eventos específicos.
